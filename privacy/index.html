@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — LuPass</title>
+  <link rel="icon" href="/favicon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --red: #d0021b; --mid: #444; --border: #e0e0e0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #111; background: #fff; line-height: 1.7; }
+    a { color: var(--red); }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 5%; border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; text-decoration: none; color: #111; }
+    .nav-logo img { width: 32px; height: 32px; border-radius: 8px; }
+
+    .content { max-width: 680px; margin: 0 auto; padding: 60px 5% 80px; }
+    h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .meta { color: var(--mid); font-size: 0.9rem; margin-bottom: 40px; }
+    h2 { font-size: 1.1rem; font-weight: 700; margin: 36px 0 10px; }
+    h3 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 8px; color: var(--mid); }
+    p { margin-bottom: 14px; font-size: 0.95rem; color: #333; }
+    ul { margin: 0 0 14px 20px; font-size: 0.95rem; color: #333; }
+    ul li { margin-bottom: 6px; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 4px; font-size: 0.88rem; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 5%; font-size: 0.85rem; color: var(--mid); text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">
+      <img src="/icon.png" alt="LuPass" />
+      LuPass
+    </a>
+  </nav>
+
+  <div class="content">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 2026-05-06</p>
+
+    <p>LuPass is a study app for the Chinese driver's license written test, made for foreigners. This policy explains what data the app collects, how it's stored, and your rights. It applies to the iOS app published as <code>com.brandonyang.lupass</code>.</p>
+    <p>If you have questions or want your data deleted, send us a message via <a href="https://tally.so/r/2EO6QA">our support form</a>.</p>
+
+    <h2>Short version</h2>
+    <ul>
+      <li>The app stores your study progress locally on your device. It never leaves your phone.</li>
+      <li>We use Sentry to receive crash reports. These don't contain personal information.</li>
+      <li>We use RevenueCat to verify your one-time premium purchase across reinstalls.</li>
+      <li>There are no accounts, no sign-in, and no cloud sync.</li>
+      <li>We don't sell your data, run ads, or use third-party trackers.</li>
+    </ul>
+
+    <h2>What we collect</h2>
+    <h3>On-device, always</h3>
+    <ul>
+      <li><strong>Study progress</strong>: which questions you've answered, whether you got them right, which questions you've bookmarked, your mock-exam scores, and the exam date you set. Stored in the device's app sandbox using AsyncStorage. Deleted when you uninstall the app or hit "Reset progress" in the Me tab. <strong>This data never leaves your device.</strong></li>
+      <li><strong>App version, iOS version, device model</strong>: included in crash reports if a crash occurs.</li>
+    </ul>
+    <h3>Only if you make a purchase</h3>
+    <ul>
+      <li><strong>Purchase receipt token</strong>: handled by Apple and RevenueCat to verify your one-time premium unlock and let you restore it after reinstall. We don't see your payment method, name, or billing address — those stay with Apple.</li>
+    </ul>
+
+    <h2>What we don't collect</h2>
+    <ul>
+      <li>Email, name, or any identifier you'd use to sign in. There is no sign-in.</li>
+      <li>Location, microphone, camera, contacts, photos, or any device identifier beyond what Apple provides for crash reports.</li>
+      <li>Behavioral analytics or third-party advertising IDs.</li>
+      <li>Anything you type into the question screens beyond your own answers, which stay on your device.</li>
+    </ul>
+
+    <h2>Why we collect what we collect</h2>
+    <ul>
+      <li><strong>Local progress</strong> powers the wrong-answers queue, weakest-chapter hint, and mock-score history.</li>
+      <li><strong>Crash reports</strong> help us fix bugs faster.</li>
+      <li><strong>Purchase tokens</strong> let you restore your premium unlock on a new device or after reinstalling, via your Apple ID.</li>
+    </ul>
+
+    <h2>Who we share data with</h2>
+    <ul>
+      <li><strong>Sentry</strong> — crash reporting. No personal information. <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></li>
+      <li><strong>RevenueCat</strong> — purchase validation. Only your platform-generated purchase token. <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a></li>
+      <li><strong>Apple</strong> — handles the actual payment, receipt validation, and Family Sharing for your purchase. We never see your payment details. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+    </ul>
+    <p>We don't share data with anyone else and we don't sell data.</p>
+
+    <h2>Your rights</h2>
+    <ul>
+      <li><strong>Erasure</strong>: All study data lives on your device. Delete the app to remove it. You can also reach out via <a href="https://tally.so/r/2EO6QA">our support form</a> and we'll confirm we hold no server-side personal data on you.</li>
+      <li><strong>Crash reports</strong>: To opt out of crash reporting, message us via <a href="https://tally.so/r/2EO6QA">our support form</a> and we'll filter your device.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>LuPass is not directed at children under 13. The Chinese driving test minimum age is 18, so the audience is adults.</p>
+
+    <h2>Changes</h2>
+    <p>We'll update this page if we change anything material and bump the date at the top.</p>
+
+    <h2>Contact</h2>
+    <p><a href="https://tally.so/r/2EO6QA">Our support form</a></p>
+  </div>
+
+  <footer>
+    &copy; LuPass &middot; <a href="/privacy">Privacy Policy</a> &middot; <a href="/terms">Terms of Use</a>
+  </footer>
+
+</body>
+</html>
