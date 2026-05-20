@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>China Driving Test in English — LuPass</title>
+  <meta name="description" content="Pass China's driver's license written exam in English. 1,660 official questions with real English explanations. Timed mock exams. One payment, lifetime access." />
+  <meta name="keywords" content="china driving test english, chinese driver license exam, subject 1 english, subject 4 english, 科目一 english, foreigner china driving" />
+  <link rel="icon" href="favicon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="China Driving Test in English — LuPass" />
+  <meta property="og:description" content="Pass China's driver's license exam in English. 1,660 official questions, real explanations, timed mock exams." />
+  <meta property="og:image" content="og-image.png" />
+  <meta property="og:url" content="https://chinadrivingtest.com" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #d0021b;
+      --dark: #111;
+      --mid: #444;
+      --light: #f7f7f7;
+      --border: #e0e0e0;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--dark);
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 5%;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 10;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .nav-logo img {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+    }
+
+    .nav-cta {
+      background: #000;
+      color: #fff;
+      padding: 9px 20px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: opacity 0.15s;
+    }
+
+    .nav-cta:hover { opacity: 0.75; }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 5% 80px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-text { max-width: 520px; }
+
+    .badge {
+      display: inline-block;
+      background: #fff3f3;
+      color: var(--red);
+      border: 1px solid #fcc;
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    h1 span { color: var(--red); }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: var(--mid);
+      margin-bottom: 36px;
+      line-height: 1.65;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #000;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+
+    .hero-cta:hover { transform: translateY(-1px); opacity: 0.85; }
+
+    .hero-cta svg { width: 22px; height: 22px; fill: #fff; }
+
+    .hero-sub {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    /* PHONE MOCKUP */
+    .mockup-wrap {
+      width: 240px;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .mockup-wrap img {
+      width: 100%;
+      border-radius: 36px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-text { max-width: 100%; }
+      .mockup-wrap {
+        width: 200px;
+        margin: 0 auto;
+      }
+    }
+
+    /* FEATURES */
+    .features {
+      background: var(--light);
+      padding: 80px 5%;
+    }
+
+    .section-label {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 48px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+
+    .feature-icon {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.55;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .footer-logo img {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+    }
+
+    footer nav {
+      border: none;
+      padding: 0;
+      position: static;
+      background: transparent;
+      backdrop-filter: none;
+      gap: 20px;
+    }
+
+    footer nav a {
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    footer nav a:hover { color: var(--dark); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="icon.png" alt="LuPass icon" />
+      LuPass
+    </div>
+    <a class="nav-cta" href="https://apps.apple.com/app/id6768374941">Download Free</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="badge">For foreigners in China</div>
+      <h1>Pass China's Driving Test<br /><span>In Real English</span></h1>
+      <p>1,660 official questions with clear English explanations — not machine translation. Built for expats, students, and anyone living and driving in China.</p>
+      <a class="hero-cta" href="https://apps.apple.com/app/id6768374941">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        Download on App Store
+      </a>
+      <p class="hero-sub">Free to try &middot; iOS &middot; No account needed</p>
+    </div>
+    <div class="mockup-wrap">
+      <img src="screenshot.png" alt="LuPass app screenshot" />
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <p class="section-label">Why LuPass</p>
+    <h2 class="section-title">Everything you need to pass</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📚</div>
+        <h3>All 1,660 Official Questions</h3>
+        <p>The complete official question bank for Subject 1 and Subject 4 — nothing left out.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🇬🇧</div>
+        <h3>Real English, Not Machine Translation</h3>
+        <p>Every question and answer is written in natural English that actually makes sense.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>Timed Mock Exams</h3>
+        <p>Simulate the real exam with timed tests so you know exactly what to expect on test day.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>Wrong-Answers Queue</h3>
+        <p>Automatically tracks questions you get wrong and prioritizes them for review.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="icon.png" alt="LuPass" />
+      LuPass
+    </div>
+    <nav>
+      <a href="https://brandon888.github.io/lupass-legal/privacy">Privacy Policy</a>
+      <a href="https://brandon888.github.io/lupass-legal/terms">Terms of Use</a>
+      <a href="https://tally.so/r/2EO6QA">Support</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
