@@ -140,6 +140,14 @@
 
     .hero-cta:hover { transform: translateY(-1px); opacity: 0.85; }
 
+    .hero-cta.ghost {
+      background: #fff;
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+
+    .hero-cta.ghost:hover { border-color: var(--mid); }
+
     .hero-cta svg { width: 22px; height: 22px; fill: #fff; }
 
     .hero-sub {
@@ -306,8 +314,14 @@
           </svg>
           Get it on Google Play
         </a>
+        <a class="hero-cta ghost" href="https://practice.chinadrivingtest.com/">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5.14v14l11-7-11-7z"/>
+          </svg>
+          Practice Online &mdash; Free
+        </a>
       </div>
-      <p class="hero-sub">Free to try &middot; iOS &amp; Android &middot; No account needed</p>
+      <p class="hero-sub">Free at practice.chinadrivingtest.com &middot; iOS &amp; Android &middot; No account needed</p>
     </div>
     <div class="mockup-wrap">
       <img src="screenshot.png" alt="LuPass app screenshot" />
